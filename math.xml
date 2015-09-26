@@ -1,26 +1,31 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="led_select" id="9" inline="true" x="284" y="154">
-    <field name="ACTION">ON</field>
-    <value name="LED">
-      <block type="math_number" id="76">
-        <field name="NUM">4000</field>
-      </block>
-    </value>
+  <block type="oled_color" id="107" x="286" y="132">
+    <field name="OBJECT">BLACK</field>
     <next>
-      <block type="movement_reverse" id="19">
+      <block type="led_select" id="9" inline="true">
+        <field name="ACTION">ON</field>
+        <value name="LED">
+          <block type="math_number" id="76">
+            <field name="NUM">4000</field>
+          </block>
+        </value>
         <next>
-          <block type="robot_delay" id="21" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="28">
-                <field name="NUM">5000</field>
-              </block>
-            </value>
+          <block type="movement_reverse" id="19">
             <next>
-              <block type="oled_linerect" id="50">
-                <field name="OBJECT">RECT</field>
+              <block type="robot_delay" id="21" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="28">
+                    <field name="NUM">5000</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="oled_drawtext" id="69">
-                    <field name="TEXT">7000</field>
+                  <block type="oled_linerect" id="50">
+                    <field name="OBJECT">RECT</field>
+                    <next>
+                      <block type="oled_drawtext" id="69">
+                        <field name="TEXT">7000</field>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
