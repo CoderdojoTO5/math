@@ -1,6 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="led_select" id="9" inline="true" x="284" y="154">
     <field name="ACTION">ON</field>
+    <value name="LED">
+      <block type="math_number" id="76">
+        <field name="NUM">4000</field>
+      </block>
+    </value>
     <next>
       <block type="movement_reverse" id="19">
         <next>
